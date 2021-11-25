@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
-__version__ = '0.1'
+__version__ = '1.0'
 
 here = path.abspath(path.dirname(__file__))
 
@@ -17,12 +17,12 @@ with open(path.join(here, 'requirements.txt'), encoding='utf-8') as f:
 install_requires = [x.strip() for x in all_reqs]
 
 setup(
-    name='normflow',
+    name='neural_spline_flows',
     version=__version__,
     description='Pytorch implementation of normalizing flows',
     long_description=long_description,
-    url='https://github.com/VincentStimper/normalizing-flows',
-    download_url='https://github.com/VincentStimper/normalizing-flows/tarball/' + __version__,
+    url='https://github.com/VincentStimper/nsf',
+    download_url='https://github.com/VincentStimper/nsf/tarball/' + __version__,
     license='MIT',
     classifiers=[
       'Development Status :: 3 - Alpha',
@@ -32,7 +32,7 @@ setup(
     keywords='',
     packages=find_packages(exclude=['docs', 'tests*']),
     include_package_data=True,
-    author=['Vincent Stimper', 'Lukas Ryll', 'David Liu'],
+    author=['Vincent Stimper'],
     install_requires=install_requires,
     author_email=''
 )

@@ -1,3 +1,8 @@
 numpy
 torch
-residual-flows @ git+https://github.com/VincentStimper/residual-flows.git
+requests
+scipy
+pandas
+torchvision
+scikit-image
+h5py
