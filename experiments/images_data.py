@@ -6,7 +6,7 @@ from torchvision import transforms as tvt
 from torchvision import datasets
 from torch.utils.data import Subset, random_split
 
-import data
+from neural_spline_flows import data
 from experiments import autils
 
 class Preprocess:

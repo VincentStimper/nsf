@@ -4,10 +4,7 @@ import numpy as np
 import os
 import torch
 
-import data as data_
-import nn as nn_
-import utils
-import vae
+from neural_spline_flows import data as data_, vae, nn as nn_, utils
 
 from functools import partial
 from matplotlib import pyplot as plt
@@ -23,7 +20,8 @@ from torchvision.utils import make_grid
 from tqdm import tqdm
 
 from experiments import cutils
-from nde import distributions as distributions_, flows, transforms
+from neural_spline_flows.nde import distributions as distributions_, flows
+from neural_spline_flows.nde import transforms
 
 parser = argparse.ArgumentParser()
 

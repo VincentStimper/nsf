@@ -1,4 +1,4 @@
-import utils
+from neural_spline_flows import utils
 
 
 def gridimshow(image, ax):

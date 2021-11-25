@@ -17,13 +17,12 @@ from experiments import autils
 from experiments.autils import Conv2dSameSize, LogProbWrapper
 from experiments.images_data import get_data, Preprocess
 
-from data import load_num_batches
+from neural_spline_flows.data import load_num_batches
 from torchvision.utils import make_grid, save_image
 
-from nde import distributions, transforms, flows
-import utils
-import optim
-import nn as nn_
+from neural_spline_flows.nde import distributions, flows
+from neural_spline_flows.nde import transforms
+from neural_spline_flows import nn as nn_, optim, utils
 
 import matplotlib
 matplotlib.use('Agg')

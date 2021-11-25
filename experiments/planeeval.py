@@ -10,12 +10,11 @@ from torch import optim
 from torch.utils import data
 from tqdm import tqdm
 
-import data as data_
-import nn as nn_
-import utils
+from neural_spline_flows import data as data_, nn as nn_, utils
 
 from experiments import cutils
-from nde import distributions, flows, transforms
+from neural_spline_flows.nde import distributions, flows
+from neural_spline_flows.nde import transforms
 
 dataset_name = 'diamond'
 path = os.path.join(cutils.get_final_root(), '{}-final.json'.format(dataset_name))

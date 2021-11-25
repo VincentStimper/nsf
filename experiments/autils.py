@@ -8,9 +8,9 @@ from sacred import observers
 from torch import nn
 from torch.utils import checkpoint
 
-import utils
-from nde import transforms
-from utils import NoDataRootError
+from neural_spline_flows import utils
+from neural_spline_flows.nde import transforms
+from neural_spline_flows.utils import NoDataRootError
 
 
 class NamingObserver(observers.RunObserver):
@@ -41,7 +41,7 @@ class NamingObserver(observers.RunObserver):
             return prefix + '-{}'.format(max_nr + 1)
 
 def imshow(image, ax):
-    image = utils.tensor2numpy(image.permute(1,2,0))
+    image = utils.tensor2numpy(image.permute(1, 2, 0))
 
     if image.shape[-1] == 1:
         ax.imshow(1 - image[...,0], cmap='Greys')

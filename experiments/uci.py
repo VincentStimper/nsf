@@ -12,12 +12,11 @@ from torch.nn.utils import clip_grad_norm_
 from torch.utils import data
 from tqdm import tqdm
 
-import data as data_
-import nn as nn_
-import utils
+from neural_spline_flows import data as data_, nn as nn_, utils
 
 from experiments import cutils
-from nde import distributions, flows, transforms
+from neural_spline_flows.nde import distributions, flows
+from neural_spline_flows.nde import transforms
 
 parser = argparse.ArgumentParser()
 
